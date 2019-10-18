@@ -1,7 +1,6 @@
 #ifndef _Deform_H
 #define _Deform_H
 
-#define ARAP_DLL_EXPORTS
 
 #include <iostream>
 #include <vector>
@@ -10,9 +9,7 @@
 #include <Eigen\Eigen>
 #include <Eigen\Sparse>
 
-//#include "WunderSVD3x3.h"
 
-//#include "arap_wrapper.h"
 
 class Deform
 {
@@ -135,7 +132,6 @@ private:
     Eigen::SparseMatrix<float> Weight;
     Eigen::SparseMatrix<float> L;
     Eigen::SparseLU<Eigen::SparseMatrix<float>> chol;
-//    Eigen::SimplicialCholesky<Eigen::SparseMatrix<float>> chol;
     Eigen::MatrixX3f d;
 
     int P_Num;
